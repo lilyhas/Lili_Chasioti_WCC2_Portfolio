@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "wcc-portfolio",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5503
+	}
+}
