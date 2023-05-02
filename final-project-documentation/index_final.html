@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <!-- meta viewport tag needed to make site responsive on mobile devices https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Final Project Documentation</title>
+
+        <!-- including for some global styling -->
+        <link rel="stylesheet" href="../css/style.css">
+
+    </head>
+    <body>
+        <!-- if you have sub-pages think about adding a simple back button -->
+        <nav>
+            <a href="../">HOME</a>
+        </nav>
+        <header class="documentation-header">
+            <section class="center-text">
+                <h1>Unstable conditions</h1>
+                <h2>by Lili Chasioti</h6>
+                <p>A triptych of live generative moving image </p> 
+            </section>
+        </header>
+
+        <main class="documentation-page">
+            <section>
+                <div class="responsive-video centered-content">
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/DVzoK0A5k0E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                   
+                </div>
+            </section>
+            <section>
+                <h3>Introduction</h3>
+                <p>This project is an exploration of the atmospheric conditions of my house, as noise. 
+                    This triptych, is a live artwork comprised of three different sketches, generated in real time by the temperature and humidity of my house. In this way, these sketches become snapshots of a performative daily act, as I live in the house. 
+                    </p>
+                    <img src="../assets/images/LivingRoom copy.png"/>
+            </section>
+            <section>
+                <h3>Concept and Background Research</h3>
+                
+                <p>Humidity has been a destructive force in my house when I was living in Greece. Through this project I aim to use it as a constructive force, and explore its qualities by correlating it with noise - a concept that also has embedded within it the elements of generation and decay. </p>
+
+                 <p>   For this project, I have embedded three custom temperature and humidity sensors in three different rooms in my house, and have been living with them. I treat the production of humidity and temperature in the context of the house, as a performative act, that reflects the indoors and outdoors atmospheric conditions, as well as my own activity in the house. These sensors will continue to work and take readings, for the duration that the work is presented. </p>
+                    
+                 <p>     In this project, I approached the idea of a ‘networked experience’ both technically and conceptually, with the one practice informing the other. I made a network of sensors that communicated wirelessly over wifi with a local server, and generated live three different sketches. My making this local network and begin to take readings from three rooms in my house, I reflected on humidity production and energy consumption in a domestic and environmental context. </p>
+                    
+                    
+                 <p>    At the same time I begun to unpack the interrelations with other inanimate objects around the house, through the production of humidity and consumption of energy. 
+                    In the context of the house, I understand all of us as ‘actors’ in a common network, according to what Bruno Latour would describe in his Actor-Network Theory. Within this framework, I treat interaction as a continuous process that is carried out for the duration of the work, and an act that is not solely tied to a human. My plants, the kettle, my flatmate, the radiator, the fridge - all become inter-actors and co-creators of the work. 
+                    </p>
+                
+                
+                <!-- if you have a full width image try make it not too tall -->
+                <img src="../assets/images/Bedroom.png"/>
+                <img src="../assets/images/Bathroom copy.png"/>
+                
+            </section>
+            <section>
+                <h3>Building the system</h3>
+                <p> An integral part of the research was constructing this system for reading humidity and temperature, and understanding how all parts could communicate with one another. I made three custom sensors in a DIY way, using DHT22 modules and Pi Pico W, that connect over the Wifi network to a local server hosted on my computer. The sensors send data via UDP as OSC messages to the server. At the same time, I manually input my unfiltered thoughts in a diaristic style, through a p5.js sketch that has an area for typing. The most challenging part was finding a way to store both inputs together in one place. Using nedb, an npm library, I managed to save everything locally in a database on the server. 
+
+                    Making my own system in a DIY and bottom up way, enabled me to have full control on the function of the network and the production and storage of data. It also allowed me to create a much more personal connection and develop intimacy, a relationship that was crucial for the unfolding of the project. 
+</p>
+
+                <!-- example of styling for three images, you can write your own styling -->
+                <div class="flex-container flex-basis-third">
+                    <div class="flex-item">
+                        <img src="../assets/images/wcc2-diagrams-01.jpg"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../assets/images/wcc2-diagrams-02.jpg"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../assets/images/wcc2-diagrams-03.jpg"/>
+                    </div>
+                </div>
+                
+                
+        </main>
+
+        <footer>
+            <!-- normally information like contact details etc  -->
+            <!-- read more about semantic HTML https://www.w3schools.com/html/html5_semantic_elements.asp -->
+            
+         </footer>
+    </body>
+</html>
